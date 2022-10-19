@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 TEST(LongestSubstrTest, BaseCase0) {
-  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ab+c.aba.*.bac.+.+*", "abacb"), 5);
+  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ab+c.aba.*.bac.+.+*", "abacb"), 4);
 }
 
 TEST(LongestSubstrTest, BaseCase1) {
@@ -11,11 +11,11 @@ TEST(LongestSubstrTest, BaseCase1) {
 }
 
 TEST(LongestSubstrTest, BaseCase2) {
-  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ac1..", "ackba"), 3);
+  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ac1..", "ackba"), 2);
 }
 
 TEST(LongestSubstrTest, BaseCase3) {
-  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ab1+.c.", "abcasj"), 4);
+  ASSERT_EQ(LongestSubstr::get_longest_substr_length("ab1+.c.", "abcasj"), 3);
 }
 
 TEST(LongestSubstrTest, BaseCase4) {

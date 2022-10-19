@@ -109,13 +109,13 @@ int LongestSubstr::get_longest_substr_length(string regex, string word) {
         "string '" + regex + "' is not a valid regular expression: there are MORE operands than required");
   }
 
+  size_t max_length = 0;
   for (int i = 0; i <= word_length; ++i) {
     for (int j = word_length; j > i; --j) {
       if (dp[regex_length - 1][i][j]) {
-        return j - i + 1;
+        max_length = std::max(max_length, static_cast<size_t>(j - i));
       }
     }
   }
-
-  return 0;
+  return max_length;
 }

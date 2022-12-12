@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/artem/formal_prac/LongestSubstr.cpp
+LongestSubstr.h
+/Users/artem/formal_prac/LongestSubstr.h
+string
+-
+stack
+-
+
+/Users/artem/formal_prac/LongestSubstr.h
+vector
+-
+algorithm
+-
+cassert
+-
+stdexcept
+-
+string
+-
+iostream
+-
+stack
+-
+
